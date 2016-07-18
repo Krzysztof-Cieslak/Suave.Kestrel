@@ -2,6 +2,8 @@
 
 Using Suave on top of Kestrel Server.
 
+**It's super early alpha version (let's call it RC) or proof of concept, not ready for any serious usage**
+
 ## Why?
 
 Beacuse Suave has great API for functional / F# programmers
