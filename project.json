@@ -1,0 +1,30 @@
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "emitEntryPoint": true,
+    "compilerName": "fsc",
+    "compile": {
+      "includeFiles": [
+        "App.fs",
+        "Program.fs"
+      ]
+    }
+  },
+  "tools": {
+    "dotnet-compile-fsc":"1.0.0-preview2-*"
+  },
+  "frameworks": {
+    "netcoreapp1.0": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.0"
+        },
+        "Microsoft.FSharp.Core.netcore": "1.0.0-*",
+        "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-*",
+        "Microsoft.AspNetCore.Diagnostics": "1.0.0-*",
+        "Suave":"2.0.0-alpha4"
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+obj/
+bin/
+project.lock.json
+issueList.md
