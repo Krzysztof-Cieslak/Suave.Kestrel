@@ -1,8 +1,25 @@
-#Demo of using Kestrel with F♯
+# Suave.Kestrel
 
-Working with `dotnet cli 1.0.0-preview2-003121` (aka. RTM)
+Using Suave on top of Kestrel Server.
 
-#How to run
+## Why?
 
-1. Run `dotnet restore` to restore packages
-1. Run `dotnet run` to compile and start server
+Beacuse Suave has great API for functional / F# programmers
+
+Beacuse Kestrel apparently is super fast.
+
+## How to build project and run sample?
+
+```
+dotnet restore
+dotnet build .\src\Suave.Kestrel\ .\samples\SimpleSample\
+dotnet run -p .\samples\SimpleSample\
+```
+
+## Contributing and copyright
+
+The project is hosted on [GitHub](https://github.com/Krzysztof-Cieslak/Suave.Kestrel) where you can [report issues](https://github.com/Krzysztof-Cieslak/Suave.Kestrel/issues), fork
+the project and submit pull requests.
+
+The library is available under [MIT license](https://github.com/Krzysztof-Cieslak/Suave.Kestrel/blob/master/LICENSE.md), which allows modification and
+redistribution for both commercial and non-commercial purposes.

@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "compilerName": "fsc",
+    "compile": {
+      "includeFiles": [
+        "Suave.Kestrel.fs"
+      ]
+    }
+  },
+  "tools": {
+    "dotnet-compile-fsc":"1.0.0-preview2-*"
+  },
+  "frameworks": {
+    "netstandard1.6": {
+      "dependencies": {
+        "NETStandard.Library":"1.6.0",
+        "Microsoft.FSharp.Core.netcore": "1.0.0-*",
+        "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-*",
+        "Suave": "2.0.0-alpha4"
+      }
+    }
+  }
+}
