@@ -5,6 +5,7 @@ open Suave.Web             // for config
 
 [<EntryPoint>]
 let main argv =
-
-    startWebServer defaultConfig (OK "Hello World from Mono!")
+    let config = {defaultConfig with bindings = [HttpBinding.mkSimple HTTP "127.0.0.1" 8083]}
+  
+    startWebServer config (OK "Hello World from Mono!")
     0

@@ -12,5 +12,5 @@ let main argv =
                         bindings = [HttpBinding.mkSimple HTTP "127.0.0.1" 8082]
                         tcpServerFactory = LibUvServerFactory()
                     }
-    startWebServer config (OK "Hello World from CoreCLR!")
+    startWebServer config (OK "Hello World from CoreCLR LibUv!")
     0
