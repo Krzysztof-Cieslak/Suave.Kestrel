@@ -28,15 +28,15 @@ Discussion about performance testing and some benchmarks results can be found at
 
 ```
 dotnet restore
-dotnet build ./samples/SuaveOnCoreCLR/
-dotnet run -p ./samples/SuaveOnCoreCLR/
+dotnet build ./benchmark/SuaveOnCoreCLR/
+dotnet run -p ./benchmark/SuaveOnCoreCLR/
 ```
 This should be running under 127.0.0.1:8081
 
 ### Suave on Mono
 
 ```
-cd ./samples/SuaveOnMono
+cd ./benchmark/SuaveOnMono
 ./build.sh 
 mono ./build/SuaveOnMono.exe
 ```
