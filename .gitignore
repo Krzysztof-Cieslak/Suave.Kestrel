@@ -2,3 +2,14 @@ obj/
 bin/
 project.lock.json
 issueList.md
+
+coreclrbench.txt
+kestrelbench.txt
+monobench.txt
+monobenchonlibuv.txt
+
+**/.paket/paket.exe
+.fake
+packages/
+build/
+any/
