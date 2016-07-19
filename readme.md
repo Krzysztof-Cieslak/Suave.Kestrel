@@ -6,9 +6,9 @@ Using Suave on top of Kestrel Server.
 
 ## Why?
 
-Beacuse Suave has great API for functional / F# programmers
+Because Suave has great API for functional / F# programmers
 
-Beacuse Kestrel apparently is super fast.
+Because Kestrel apparently is super fast.
 
 ## How to build project and run sample?
 
@@ -17,6 +17,10 @@ dotnet restore
 dotnet build .\src\Suave.Kestrel\ .\samples\SimpleSample\
 dotnet run -p .\samples\SimpleSample\
 ```
+
+## Performance
+
+Discussion about performance testing and some benchmarks results can be found at https://github.com/Krzysztof-Cieslak/Suave.Kestrel/issues/1
 
 ## Contributing and copyright
 
