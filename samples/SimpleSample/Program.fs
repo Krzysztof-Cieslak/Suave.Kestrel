@@ -12,6 +12,7 @@ type Startup() =
 [<EntryPoint>]
 let main argv =
     WebHostBuilder()
+        .UseUrls("http://localhost:8080")
         .UseKestrel()
         .UseStartup<Startup>()
         .Build()
