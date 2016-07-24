@@ -3,10 +3,10 @@ bin/
 project.lock.json
 issueList.md
 
-coreclrbench.txt
-kestrelbench.txt
-monobench.txt
-monobenchonlibuv.txt
+suaveOnKestrel.txt
+suaveOnCoreCLR.txt
+suaveOnMono.txt
+kestrelPlain.txt
 
 **/.paket/paket.exe
 .fake
