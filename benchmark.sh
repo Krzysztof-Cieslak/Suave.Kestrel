@@ -1,14 +1,20 @@
 #!/bin/bash
-
+#suave on kestrel
 echo "Benchmarking Suave on Kestrel"
-#kestrel
 wrk -t12 -c400 -d30s http://localhost:8080 | tee suaveOnKestrel.txt
+
+#suave on core crl
 echo "Benchmarking Suave On CoreCLR"
-#core clr
 wrk -t12 -c400 -d30s http://localhost:8081 | tee suaveOnCoreCLR.txt
+
+#suave on mono
 echo "Benchmarking Suave on Mono"
-#mono
 wrk -t12 -c400 -d30s http://localhost:8083 | tee suaveOnMono.txt
+
+#plain kestrel 
 echo "Benchmarking Kestrel plain"
-#mono on libuv
 wrk -t12 -c400 -d30s http://localhost:8085 | tee kestrelPlain.txt
+
+# MVC on kestrel 
+echo "Benchmarking MVC on Kestrel"
+wrk -t12 -c400 -d30s http://localhost:8086 | tee mvcOnKestrel.txt
