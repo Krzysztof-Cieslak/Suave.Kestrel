@@ -8,6 +8,7 @@ suaveOnCoreCLR.txt
 suaveOnMono.txt
 kestrelPlain.txt
 mvcOnKestrel.txt
+nancyFxOnKestrel.txt
 
 **/.paket/paket.exe
 .fake

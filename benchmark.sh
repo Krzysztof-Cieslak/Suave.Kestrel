@@ -18,3 +18,7 @@ wrk -t12 -c400 -d30s http://localhost:8085 | tee kestrelPlain.txt
 # MVC on kestrel 
 echo "Benchmarking MVC on Kestrel"
 wrk -t12 -c400 -d30s http://localhost:8086 | tee mvcOnKestrel.txt
+
+# NancyFx on kestrel 
+echo "Benchmarking NancyFx on Kestrel"
+wrk -t12 -c400 -d30s http://localhost:8087 | tee nancyFxOnKestrel.txt
